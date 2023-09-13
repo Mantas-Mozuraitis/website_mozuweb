@@ -56,8 +56,8 @@ header h1{
 
 /* Connecting Line */
 .vertical-line{
-    border: solid var(--color_one) 0.5rem;
-    box-shadow: rgba(16, 44, 87, 0.4) 0px 0px 0px 2px, rgba(16, 44, 87, 0.65) 0px 4px 6px -1px, rgba(16, 44, 87, 0.08) 0px 1px 0px inset;
+    border: solid var(--color_two) 0.5rem;
+    box-shadow: rgba(234, 219, 200, 0.4) 0px 0px 0px 2px, rgba(234, 219, 200, 0.65) 0px 4px 6px -1px, rgba(234, 219, 200, 0.08) 0px 1px 0px inset;
     height: 10rem;
     position: absolute;
     z-index: -1;
@@ -65,11 +65,39 @@ header h1{
 
 
 /* Main section */
-main img{
+.mozuweb{
     height: auto;
     width: 12rem;
     border-radius: 50%;
     padding: 0.5rem;
     background-color: var(--color_three);
-    box-shadow: rgba(16, 44, 87, 0.4) 0px 0px 0px 2px, rgba(16, 44, 87, 0.65) 0px 4px 6px -1px, rgba(16, 44, 87, 0.08) 0px 1px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
+}
+
+.about{
+    height: auto;
+    width: 60rem;
+    padding: 0.5rem;
+    background-color: var(--color_three);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
+}
+
+.cards{
+    display: flex;
+    gap: 2rem;
+}
+
+.card{
+    padding: 0.5rem;
+    background-color: var(--color_three);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .content{
+    font-size: 1.5rem;
 }
