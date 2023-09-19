@@ -1,12 +1,12 @@
 *, :root{
     --color_one:#F8F0E5;
     --color_two:#EADBC8;
-    --color_three:#DAC0A3;
+    --color_three:#ccb397;
     --color_four:#102C57;
 }
 html{
     font-size: 12px;
-    color: var(--color_one);
+    color: whitesmoke;
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
 }
@@ -29,9 +29,47 @@ header{
     justify-content: center;
     gap: 2rem;
 }
-header .fa{
+header h1{
+    background-color: var(--color_three);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
+    text-shadow:  0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+    padding: 3rem;
+    color: whitesmoke;
+    text-align: center;
+    border-radius:1.1rem;
+}
+
+/* Main section */
+main{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 0rem;
+}
+
+
+
+fieldset{
+    border-radius:1.1rem;
+    padding: 3rem;
+    border: none;
+    background-color: var(--color_two);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+legend{
+    min-width: 100%;
+}
+.legend-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+legend .fa-facebook, legend .fa-instagram{
     font-size: 5rem;
-    color: var(--color_one);
+    color: whitesmoke;
     background-color: var(--color_three);
     padding: 1rem;
     border-radius:1.1rem;
@@ -41,20 +79,10 @@ header .fa{
     transition-duration: .2s;
     transition-timing-function: linear;
 }
-header .fa:hover{
+.fa-facebook:hover, .fa-instagram:hover{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 6px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px 0px 2px inset; 
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
-header h1{
-    background-color: var(--color_three);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
-    text-shadow:  0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
-    padding: 3rem;
-    color:var(--color_one);
-    text-align: center;
-    border-radius:1.1rem;
-}
-/* Content seperator */
 .mozuweb{
     height: auto;
     width: 12rem;
@@ -63,18 +91,6 @@ header h1{
     background-color: var(--color_three);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
 }
-
-/* Main section */
-main{
-    background-color: var(--color_two);
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding: 2rem 0rem;
-}
-
 
 .cards{
     display: flex;
@@ -116,6 +132,7 @@ main{
     text-align: center;
 }
 .card .header .fa{
+    color: var(--color_four);
     font-weight: normal;
     font-size: 2.5rem;
 }
@@ -138,12 +155,19 @@ main{
 .card .content ul li{
     padding: 0.5rem 0;
 }
+.card .content .fa-check{
+    color: var(--color_four);
+}
 .card .footer{
-    color: var(--color_three);
+    color: var(--color_four);
     font-size: 2rem;
     background-color: var(--color_one);
     text-align: center;
     border-radius: 1.1rem;
     min-width: 100%;
     font-weight: bold;
+
+    transition-property: border;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
