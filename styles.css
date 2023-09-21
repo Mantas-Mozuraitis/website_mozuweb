@@ -20,11 +20,14 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 /* Main section */
 main{
     min-width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,9 +99,17 @@ legend .fa-facebook, legend .fa-instagram{
     justify-content: space-between;
     align-items: center;
 }
+
+/* Card on hover effects */
 .card:hover{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
 }
+.card:hover .header{
+    gap: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
+}
+
+
 .card .header{
     display: flex;
     align-items: center;
@@ -108,13 +119,10 @@ legend .fa-facebook, legend .fa-instagram{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
     min-width: 107%;
     gap: 1rem;
+
     transition-property: box-shadow, gap;
     transition-duration: .2s;
     transition-timing-function: linear;
-}
-.card:hover .header{
-    gap: 5rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
 }
 .card .header h2{
     font-weight: normal;
@@ -132,6 +140,9 @@ legend .fa-facebook, legend .fa-instagram{
     margin: 1rem;
 
     display: flex;
+}
+.card .content .description-hidden{
+    display: none;
 }
 .card .content ul{
     list-style-type: none;
