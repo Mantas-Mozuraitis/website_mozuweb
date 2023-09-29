@@ -11,7 +11,10 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-color: var(--color_one);
+    background-image: url("./assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
     margin: 0;
     padding: 0;
 }
@@ -29,6 +32,7 @@ main{
     min-height: 100%;
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -37,46 +41,34 @@ main{
 
 
 fieldset{
-    border-radius:1.1rem;
     padding: 3rem;
     border: none;
-    background-color: var(--color_two);
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-legend{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-.legend-container{
+.header-container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 80%;
 }
-legend .fa-facebook, legend .fa-instagram{
+.header-container .fa-facebook, .header-container .fa-instagram{
     font-size: 5rem;
-    color: whitesmoke;
-    background-color: var(--color_three);
-    padding: 1rem;
-    border-radius:1.1rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
-    text-shadow:  0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
-    transition-property: box-shadow, text-shadow;
-    transition-duration: .2s;
-    transition-timing-function: linear;
+    border-radius: 50%;
+    padding: 0.5rem;
 }
-.fa-facebook:hover, .fa-instagram:hover{
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 6px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px 0px 2px inset; 
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+.header-container .fa-facebook{
+    color: #3b5998;
+}
+.header-container .fa-instagram{
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .mozuweb{
     height: auto;
     width: 12rem;
     border-radius: 50%;
-    padding: 0.5rem;
-    background-color: var(--color_three);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
+    padding: 0.8rem;
 }
 
 .cards{
@@ -86,10 +78,9 @@ legend .fa-facebook, legend .fa-instagram{
     gap: 4rem;
 }
 .card{
-    background-color: var(--color_three);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
+    background-color: #0f243c50;
+    box-shadow: whitesmoke 0px 0px 0px 2px inset, black 10px -10px 0px -3px, whitesmoke 10px -10px, black 20px -20px 0px -3px, whitesmoke 20px -20px;
     min-width: 25rem;
-    border-radius: 1.1rem;
     cursor: pointer;
     transition-property: box-shadow;
     transition-duration: .2s;
@@ -105,9 +96,6 @@ legend .fa-facebook, legend .fa-instagram{
 .card:hover{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
 }
-.card:hover .header{
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
-}
 .card:hover .header .fa{
     margin-left: 6rem;
 }
@@ -115,15 +103,8 @@ legend .fa-facebook, legend .fa-instagram{
 .card .header{
     display: flex;
     align-items: center;
-    background-color: var(--color_three);
-    border-radius: 1.1rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
-    min-width: 105%;
-    gap: 1rem;
-
-    transition-property: box-shadow;
-    transition-duration: .2s;
-    transition-timing-function: linear;
+    min-width: 100%;
+    gap: 2rem;
 }
 .card .header h2{
     font-weight: normal;
@@ -131,7 +112,6 @@ legend .fa-facebook, legend .fa-instagram{
     margin-left: 1rem;
 }
 .card .header .fa{
-    color: var(--color_four);
     font-weight: normal;
     font-size: 3.5rem;
     margin-right: 1rem;
@@ -162,18 +142,10 @@ legend .fa-facebook, legend .fa-instagram{
     color: var(--color_four);
 }
 .card .footer{
-    color: var(--color_four);
     font-size: 2rem;
-    background-color: var(--color_one);
     text-align: center;
-    border-radius: 1.1rem;
     min-width: 100%;
     font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 1px -5px 2px inset;
-
-    transition-property: border;
-    transition-duration: .2s;
-    transition-timing-function: ease-in-out;
 }
 
 
