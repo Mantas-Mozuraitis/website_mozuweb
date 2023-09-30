@@ -1,9 +1,3 @@
-*, :root{
-    --color_one:#F8F0E5;
-    --color_two:#EADBC8;
-    --color_three:#ccb397;
-    --color_four:#102C57;
-}
 html{
     font-size: 12px;
     color: whitesmoke;
@@ -55,6 +49,13 @@ fieldset{
     font-size: 5rem;
     border-radius: 50%;
     padding: 0.5rem;
+
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: linear;
+}
+.header-container .fa-facebook:hover, .header-container .fa-instagram:hover,.mozuweb:hover{
+    transform: scale(1.2);
 }
 .header-container .fa-facebook{
     color: #3b5998;
@@ -69,6 +70,11 @@ fieldset{
     width: 12rem;
     border-radius: 50%;
     padding: 0.8rem;
+
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: linear;
+    cursor: pointer;
 }
 
 .cards{
@@ -79,8 +85,8 @@ fieldset{
 }
 .card{
     background-color: #0f243c50;
-    box-shadow: whitesmoke 0px 0px 0px 2px inset, black 10px -10px 0px -3px, whitesmoke 10px -10px, black 20px -20px 0px -3px, whitesmoke 20px -20px;
-    min-width: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
+    min-width: 30rem;
     cursor: pointer;
     transition-property: box-shadow;
     transition-duration: .2s;
@@ -94,7 +100,7 @@ fieldset{
 
 /* Card on hover effects */
 .card:hover{
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .card:hover .header .fa{
     margin-left: 6rem;
@@ -103,7 +109,7 @@ fieldset{
 .card .header{
     display: flex;
     align-items: center;
-    min-width: 100%;
+    min-width: 90%;
     gap: 2rem;
 }
 .card .header h2{
@@ -143,9 +149,11 @@ fieldset{
 }
 .card .footer{
     font-size: 2rem;
+    min-width: 90%;
     text-align: center;
-    min-width: 100%;
-    font-weight: bold;
+    background-color: #559fe440;
+    border-radius: 0.2rem;
+    margin: 1rem;
 }
 
 
