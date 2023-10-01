@@ -54,7 +54,7 @@ fieldset{
     transition-duration: .15s;
     transition-timing-function: linear;
 }
-.header-container .fa-facebook:hover, .header-container .fa-instagram:hover,.mozuweb:hover{
+.header-container .fa-facebook:hover, .header-container .fa-instagram:hover{
     transform: scale(1.2);
 }
 .header-container .fa-facebook{
@@ -70,11 +70,6 @@ fieldset{
     width: 12rem;
     border-radius: 50%;
     padding: 0.8rem;
-
-    transition-property: transform;
-    transition-duration: .15s;
-    transition-timing-function: linear;
-    cursor: pointer;
 }
 
 .cards{
@@ -84,11 +79,12 @@ fieldset{
     gap: 4rem;
 }
 .card{
-    background-color: #0f243c50;
+    background-color: #0f243c90;
+    backdrop-filter: blur(0.3rem);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
     min-width: 30rem;
     cursor: pointer;
-    transition-property: box-shadow;
+    transition-property: box-shadow, backdrop-filter;
     transition-duration: .2s;
     transition-timing-function: linear;
 
@@ -151,8 +147,7 @@ fieldset{
     font-size: 2rem;
     min-width: 90%;
     text-align: center;
-    background-color: #559fe440;
-    border-radius: 0.2rem;
+    outline: rgba(3, 102, 214, 0.3) solid 0.3rem;
     margin: 1rem;
 }
 
