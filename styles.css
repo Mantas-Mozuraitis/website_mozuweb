@@ -79,7 +79,7 @@ fieldset{
     gap: 4rem;
 }
 .card{
-    background-color: #0f243c90;
+    background-color: #193c6590;
     backdrop-filter: blur(0.3rem);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
     min-width: 30rem;
@@ -155,13 +155,31 @@ fieldset{
 /* Mobile device screen */
 
 @media (max-width:768px){
-    .legend-container{
-        gap: 2rem;
-    }
-    legend .fa-facebook, legend .fa-instagram{
+    .header-container .fa-facebook, .header-container .fa-instagram{
         font-size: 3.5rem;
     }
     .mozuweb{
         width: 9rem;
+    }
+    .cards{
+        gap: 2rem;
+    }
+    .card{
+        background-color: #14355a90;
+        min-width: 26rem;
+    }
+    fieldset{
+        padding: 0;
+    }
+    .card .footer{
+        outline: none;
+    }
+
+    /* Card on hover effects */
+    .card:hover{
+        box-shadow: none;
+    }
+    .card:hover .header .fa{
+        margin-left: 0;
     }
 }
