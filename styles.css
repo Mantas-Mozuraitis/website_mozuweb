@@ -21,6 +21,11 @@ body{
     overflow: hidden;
 }
 
+/* Javascript classes */
+.hidden{
+    display: none;
+}
+
 /* Main section */
 main{
     min-height: 100%;
@@ -151,6 +156,52 @@ fieldset{
     margin: 1rem;
 }
 
+/* Form page */
+form{
+    min-width: 100%;
+}
+form ul{
+    list-style: none;
+    padding: 2rem;
+}
+form li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+form li input, form li textarea, form li input::placeholder, form li textarea::placeholder{
+    color: var(--color-four); 
+}
+
+button{
+    background: #458f9570;
+    background: linear-gradient(0deg, rgba(69,143,149,0.5) 0%, rgba(124,223,217,0.8) 100%);
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    width: fit-content;
+    padding: 0.5rem;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: #458f9530;
+    background: linear-gradient(0deg, rgba(69,143,149,0.1) 0%, rgba(124,223,217,0.5) 100%);
+}
+
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+input, textarea{
+    background-color: #7cdfd925;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 2.5rem;
+}
+
 
 /* Mobile device screen */
 
@@ -173,6 +224,10 @@ fieldset{
     }
     .card .footer{
         outline: none;
+    }
+    /* form */
+    input, textarea{
+        font-size: 1.5rem;
     }
 
     /* Card on hover effects */
