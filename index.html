@@ -22,13 +22,17 @@
                 <a href="https://www.instagram.com/mozuweb/" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
             </div>
 
-            <form class="hidden" method="post">
-                <input type="hidden" name="_subject" value="mantasmozuraitis.com new message!"/>
+            <form id="orderForm" action="https://formsubmit.co/mozuwebdevelopment@gmail.com" class="hidden" method="post" onsubmit="">
+                <input type="hidden" name="_subject" value="mozuweb.com new message!"/>
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="http://mantasmozuraitis.com">
+                <input type="hidden" name="_next" value="https://mozuweb.com">
                 <ul>
                     <li>
-                        <input type="text" id="name" name="user_name" placeholder="Your name" required/>
+                        <input type="text" id="plan_name" name="plan_name" value="" readonly/>
+                    </li>
+
+                    <li>
+                        <input type="text" id="name" name="user_name" placeholder="Your full name" required/>
                     </li>
 
                     <li>
@@ -36,14 +40,14 @@
                     </li>
 
                     <li>
-                        <textarea id="msg" name="user_message" placeholder="Your message..." required></textarea>
+                        <textarea id="msg" name="user_message" placeholder="Order requirements and description" required></textarea>
                     </li>
 
-                    <li>
-                        <button type="submit">Send your message</button>
+                    <li class="buttons">
+                        <button class="btn-return"><a href="./index.html">Return</a></button>
+                        <button type="submit">Send request</button>
                     </li>
                 </ul>
-                <a href="./index.html">Go Back</a>
 
             </form>
 
@@ -51,7 +55,7 @@
 
                 <div class="cards">
 
-                    <div class="card" id="portfolio">
+                    <div class="card" id="landing-page">
                         <div class="header">
                             <h2>Landing Page</h2>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -64,7 +68,7 @@
                         </div>
                     </div>
         
-                    <div class="card" id="business">
+                    <div class="card" id="brochure-website">
                         <div class="header">
                             <h2>Brochure website</h2>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -77,7 +81,7 @@
                         </div>
                     </div>
         
-                    <div class="card" id="custom">
+                    <div class="card" id="custom-website">
                         <div class="header">
                             <h2>Custom website</h2>
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>

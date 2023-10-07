@@ -83,7 +83,7 @@ fieldset{
     gap: 2rem;
 }
 .card{
-    background-color: #060f1e90;
+    background-color: #0f243c80;
     backdrop-filter: blur(0.3rem);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
     width: 30rem;
@@ -103,7 +103,7 @@ fieldset{
 }
 /* Card on hover effects */
 .card:hover{
-    background-color: #0f243c80;
+    background-color: #060f1e90;
 }
 .card .header{
     display: flex;
@@ -149,36 +149,58 @@ form li{
     justify-content: center;
     padding: 1rem;
 }
-form li input, form li textarea, form li input::placeholder, form li textarea::placeholder{
-    color: var(--color-four); 
+form li input, form li textarea{
+    color: #b0ebfe; 
 }
-
+form ul .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 button{
-    background: #458f9570;
-    background: linear-gradient(0deg, rgba(69,143,149,0.5) 0%, rgba(124,223,217,0.8) 100%);
-    border-radius: 0.4rem;
+    background-color: #060f1e90;
+    border-radius: 8px;
     font-size: 2rem;
+    color: #b0ebfe;
     width: fit-content;
     padding: 0.5rem;
     align-self: center;
-    border: none;
+    border: solid 0.02rem #b0ebfe;
     cursor: pointer;
+
+    transition-property: color, background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.btn-return a{
+    text-decoration: none;
+    color: #b0ebfe;
+
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
 }
 button:hover{
-    background: #458f9530;
-    background: linear-gradient(0deg, rgba(69,143,149,0.1) 0%, rgba(124,223,217,0.5) 100%);
+    color: #060f1e90;
+    background-color: #b0ebfe;
 }
-
+.btn-return a:hover{
+    color: #060f1e90;
+}
 textarea{
     vertical-align: top;
     height: 5em;
 }
 input, textarea{
-    background-color: #7cdfd925;
+    background-color: #0f243c80;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
     border: none;
     padding: 0.5rem;
     border-radius: 0.4rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+::placeholder{
+    color: #b0ebfe50;
 }
 
 
@@ -221,7 +243,9 @@ input, textarea{
     input, textarea{
         font-size: 1.5rem;
     }
-
+    button{
+        font-size: 1.5rem;
+    }
     /* Card on hover effects */
     .card:hover{
         box-shadow: none;
