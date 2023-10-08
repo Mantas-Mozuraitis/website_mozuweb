@@ -18,7 +18,6 @@ body{
     align-items: center;
     min-height: 100svh;
     max-width: 100svw;
-    overflow: hidden;
 }
 
 /* Javascript classes */
@@ -28,13 +27,9 @@ body{
 
 /* Main section */
 main{
-    min-height: 100%;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0rem;
     padding-bottom: 2rem;
 }
 
@@ -42,6 +37,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 7rem 0rem;
 }
 .header-container .title{
     display: flex;
@@ -83,7 +79,7 @@ fieldset{
     gap: 2rem;
 }
 .card{
-    background-color: #0f243c80;
+    background-color: #1e3b5d70;
     backdrop-filter: blur(0.3rem);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
     width: 30rem;
@@ -91,7 +87,7 @@ fieldset{
     border-radius: 8px;
 
     transition-property: background-color;
-    transition-duration: .2s;
+    transition-duration: .25s;
     transition-timing-function: linear;
 
     display: flex;
@@ -103,7 +99,7 @@ fieldset{
 }
 /* Card on hover effects */
 .card:hover{
-    background-color: #060f1e90;
+    background-color: #1e3b5d;
 }
 .card .header{
     display: flex;
@@ -153,7 +149,7 @@ form li{
     display: flex;
     align-items: center;
     
-    background-color: #0f243c80;
+    background-color:#19324f;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
     border: none;
     border-radius: 0.4rem;
@@ -181,7 +177,7 @@ button{
     width: fit-content;
     padding: 0.5rem;
     align-self: center;
-    border: solid 0.25rem #b0ebfe;
+    border: solid 0.15rem #b0ebfe;
     cursor: pointer;
 
     transition-property: color, background-color;
@@ -209,11 +205,11 @@ textarea{
     height: 5em;
 }
 input, textarea{
-    background-color: #0f243c80;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
+    background-color: #55687930;
     border: none;
     padding: 0.5rem;
-    border-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
     font-size: 2rem;
     outline: none;
 }
@@ -225,6 +221,10 @@ input, textarea{
 /* Mobile device screen */
 
 @media (max-width:768px){
+    .header-container{
+        margin: 0rem 0rem;
+    }
+
     .header-container .fa-facebook, .header-container .fa-instagram{
         font-size: 3rem;
     }
@@ -240,7 +240,7 @@ input, textarea{
         gap: 1.5rem;
     }
     .card{
-        background-color:#102b4a60;
+        background-color:#1e3b5d95;
         max-width: 25rem;
     }
     .card .header h2, .card .footer{
@@ -267,8 +267,5 @@ input, textarea{
     /* Card on hover effects */
     .card:hover{
         box-shadow: none;
-    }
-    .card:hover .header .fa{
-        margin-left: 0;
     }
 }
