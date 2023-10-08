@@ -22,21 +22,30 @@
                 <a href="https://www.instagram.com/mozuweb/" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
             </div>
 
-            <form id="orderForm" action="https://formsubmit.co/mozuwebdevelopment@gmail.com" class="hidden" method="post" onsubmit="">
+            <form id="orderForm" action="https://formsubmit.co/mozuwebdevelopment@gmail.com" class="hidden" method="post">
                 <input type="hidden" name="_subject" value="mozuweb.com new message!"/>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://mozuweb.com">
                 <ul>
                     <li>
-                        <input type="text" id="plan_name" name="plan_name" value="" readonly/>
+                        <div class="list-item">
+                            <i class="fa fa-fw fa-cog"></i>
+                            <input type="text" id="plan_name" name="plan_name" value="" readonly/>
+                        </div>
                     </li>
 
                     <li>
-                        <input type="text" id="name" name="user_name" placeholder="Your full name" required/>
+                        <div class="list-item">
+                            <i class="fa fa-fw fa-user"></i>
+                            <input type="text" id="name" name="user_name" placeholder="Your full name" required/>
+                        </div>
                     </li>
 
                     <li>
-                        <input type="email" id="mail" name="user_email" placeholder="Your email address" required/>
+                        <div class="list-item">
+                            <i class="fa fa-fw fa-envelope-o"></i>
+                            <input type="email" id="mail" name="user_email" placeholder="Your email address" required/>
+                        </div>
                     </li>
 
                     <li>
@@ -44,7 +53,7 @@
                     </li>
 
                     <li class="buttons">
-                        <button class="btn-return"><a href="./index.html">Return</a></button>
+                        <button class="btn-return"><a class="a-return" href="./index.html">Return</a></button>
                         <button type="submit">Send request</button>
                     </li>
                 </ul>

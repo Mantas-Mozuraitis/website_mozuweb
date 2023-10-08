@@ -4,10 +4,6 @@ document.querySelectorAll(".card").forEach((card) => {
     })
 })
 
-document.querySelector("#orderForm").addEventListener("submit", ()=>{
-    alert("Form has been submitted");
-});
-
 function toggleForm(){
     document.querySelector("fieldset").classList.toggle("hidden");
     document.querySelector("form").classList.toggle("hidden");

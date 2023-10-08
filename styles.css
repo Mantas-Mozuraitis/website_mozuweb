@@ -149,6 +149,22 @@ form li{
     justify-content: center;
     padding: 1rem;
 }
+.list-item{
+    display: flex;
+    align-items: center;
+    
+    background-color: #0f243c80;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 2px 0px 4px inset; 
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+}
+.list-item input{
+    flex-grow: 1;
+}
+.list-item i{
+    color: #b0ebfe;
+}
 form li input, form li textarea{
     color: #b0ebfe; 
 }
@@ -165,16 +181,17 @@ button{
     width: fit-content;
     padding: 0.5rem;
     align-self: center;
-    border: solid 0.02rem #b0ebfe;
+    border: solid 0.25rem #b0ebfe;
     cursor: pointer;
 
     transition-property: color, background-color;
     transition-duration: 0.15s;
     transition-timing-function: linear;
 }
-.btn-return a{
+.a-return{
     text-decoration: none;
     color: #b0ebfe;
+    padding: 0.1rem;
 
     transition-property: color;
     transition-duration: 0.15s;
@@ -184,7 +201,7 @@ button:hover{
     color: #060f1e90;
     background-color: #b0ebfe;
 }
-.btn-return a:hover{
+.btn-return:hover .a-return{
     color: #060f1e90;
 }
 textarea{
@@ -198,8 +215,9 @@ input, textarea{
     padding: 0.5rem;
     border-radius: 0.4rem;
     font-size: 2rem;
+    outline: none;
 }
-::placeholder{
+::placeholder, #plan_name{
     color: #b0ebfe50;
 }
 
