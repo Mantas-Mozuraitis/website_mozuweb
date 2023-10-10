@@ -11,8 +11,8 @@
    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
    $headers = "From:" . $from;
    if(mail($to,$subject,$message, $headers)) {
-      echo '<script>alert("Message was sent successfully")</script>'; 
+      echo '<script>alert("Message was sent successfully");window.location.replace("https://mozuweb.com");</script>'; 
    } else {
-      echo '<script>alert("Message was not sent")</script>'; 
+      echo '<script>alert("Message was not sent");location.reload();</script>'; 
    }
 ?>
