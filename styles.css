@@ -66,33 +66,7 @@ main{
     width: 14rem;
     border-radius: 50%;
 }
-/* header seperator */
-.hr-title{
-    text-align: center;
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: normal;
-    color: #b0ebfe;
-}
-.hr-text {
-    line-height: 1em;
-    position: relative;
-    outline: 0;
-    border: 0;
-    color: black;
-    text-align: center;
-    height: 1.5em;
-    opacity: .5;
-    &:before {
-      content: '';
-      background: linear-gradient(to right, transparent, #b0ebfe, transparent);
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      height: 3px;
-    }
-  }
+
 /* Card container */
 fieldset{
     padding: 3rem;
