@@ -223,6 +223,9 @@ input, textarea{
 /* Mobile device screen */
 
 @media (max-width:768px){
+    .wrapper{
+        margin-bottom: 2rem;
+    }
     .header-container{
         margin: 0rem 0rem;
     }
